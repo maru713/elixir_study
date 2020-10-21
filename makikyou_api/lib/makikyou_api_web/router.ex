@@ -9,5 +9,6 @@ defmodule MakikyouApiWeb.Router do
   scope "/api", MakikyouApiWeb do
     pipe_through :api
     get "/hello", MakiharaController, :hello
+    post "/hello", MakiharaController, :bye
   end
 end

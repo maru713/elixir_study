@@ -4,4 +4,7 @@ defmodule MakikyouApiWeb.MakiharaController do
   def hello(conn, _params) do
     json(conn,%{msg: "hello"})
   end
+  def bye(conn, params) do
+    json(conn, %{"msg": params["num"]*5})
+  end
 end
